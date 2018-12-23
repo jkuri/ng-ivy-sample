@@ -6,3 +6,44 @@
 p
   color: #333
   font-size: 16px
+
+.box
+  background: #fff
+  border: 1px solid #E7E7E7
+  width: 100%
+  min-height: 250px
+  margin-top: 20px
+  margin-bottom: 20px
+
+  &.is-dark
+    background: #0F1420
+
+$color: #E7E7E7
+$fill: #6B6C6F
+
+.chart
+  height: 250px
+  display: block
+
+  svg
+
+    .line
+      fill: none
+      stroke-width: 2.5px
+      shape-rendering: geometricPrecision
+
+    .axis
+
+        line, path
+          stroke: $color
+          stroke-width: 1px
+          shape-rendering: crispEdges
+          fill: none
+          stroke-dasharray: 3 3
+
+        path
+          display: none
+
+        text
+          fill: $fill
+          font-size: 10px
